@@ -433,7 +433,14 @@ body {
 }
 
 .accordion-button::after {
-    background-image: url(./assets/images/png/accordian-plus-icon.png) !important;
+    background-image: url("./assets/images/png/accordian-plus-icon.png") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: unset !important;
+    width: 20px !important;
+    height: 3px !important;
+    background-color: #fff !important;
 }
 
 .accordion-button:focus {

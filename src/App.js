@@ -12,20 +12,20 @@ import Potenciando from './components/Potenciando';
 import React, { useState, useEffect } from 'react';
 import BackToTop from './assets/images/png/back-to-top.png';
 // import { Preloader } from './components/Iconimg';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// import Aos from 'aos';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 
 function App() {
-  // useEffect(() => {
-  //   AOS.init(
-  //     {
-  //       once: true,
-  //       duration: 1000,
-  //     }
-  //   );
-  //   Aos.refresh()
-  // });
+  useEffect(() => {
+    AOS.init(
+      {
+        once: true,
+        duration: 1000,
+      }
+    );
+    Aos.refresh()
+  });
   const top = () => {
     document.documentElement.scrollTop = 0;
   };
